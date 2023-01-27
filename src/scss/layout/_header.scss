@@ -7,7 +7,7 @@
         color:v.$blanco;
         text-align: center;
      
-        @include m.tablet {
+        @include m.desktop {
             margin:0;
         }
     }
