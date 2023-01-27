@@ -1,0 +1,30 @@
+@use 'variables' as v;
+
+// @mixin heading($color){
+//     text-transform: uppercase;
+//     font-size: 2.4rem;
+//     color: $color;
+//     letter-spacing: 1px;
+
+// }
+
+@mixin telefono{
+    @media(min-width:v.$telefono){
+        @content;//Sirve para que todo lo que pase lo reemplze
+    }
+}
+@mixin tablet{
+    @media(min-width:v.$tablet){
+        @content;//Sirve para que todo lo que pase lo reemplze
+    }
+}
+@mixin desktop{
+    @media(min-width:v.$desktop){
+        @content;//Sirve para que todo lo que pase lo reemplze
+    }
+}
+@mixin desktop{
+    @media(min-width:v.$desktopXL){
+        @content;//Sirve para que todo lo que pase lo reemplze
+    }
+}
